@@ -1,18 +1,29 @@
-import Head from 'next/head'
+import Image from 'next/image'
 
-export default function Home() {
+import logo from '../public/images/logo.png'
+
+export default function () {
   return (
-    <div className="container">
-      <Head>
-        <title>Notefy</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <div className='container'>
-          Welcome to Notefy
-        </div>
-      </main>
-    </div>
+    <>
+      <header>
+        <nav className="mx-auto px-4 shadow-lg">
+          <div className="flex flex-row items-center justify-between">
+            <a href="/" className="h-16 w-screen py-2 px-4">
+              <Image src={logo} alt="notefy logo" />
+              <span className="text-2xl">Notefy</span>
+            </a>
+            <div className="space-x-4">
+              <a
+                href="/login"
+                className="rounded-md bg-slate-400 px-4 py-3 text-white"
+              >
+                Login
+              </a>
+              <a href="/signup">Sign</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </>
   )
 }
