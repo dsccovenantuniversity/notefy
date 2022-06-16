@@ -7,12 +7,23 @@ export default function () {
     <>
       <div className="container absolute flex items-center justify-center">
         <div className="text-center">
-          <h1 className="my-10 text-5xl font-bold">Log in</h1>
+          <h1 className="my-10 text-5xl font-bold">Sign up</h1>
           <div className="mb-6 rounded-md border border-solid bg-white px-20 py-1 hover:bg-gray-500">
             <a href="http://">Continue with Google</a>
           </div>
           <hr className="my-6 border-gray-500 opacity-60" />
           <div>
+            <input
+              type="text"
+              className="mb-3 mr-8 w-36 p-1 "
+              placeholder="First name"
+            />
+            <input
+              type="text"
+              className="mb-3 w-36 p-1 "
+              placeholder="Last name"
+            />
+            <br />
             <input
               type="text"
               className="mb-3 w-80 p-1 "
