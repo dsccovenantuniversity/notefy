@@ -1,10 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
+import Head from 'next/head'
 import logo from '../public/images/logo.png'
 
 export default function () {
   return (
     <>
+      <Head>
+        <title>Sign up to Notefy</title>
+      </Head>
       <div className="flex items-center justify-center">
         <div className="text-center">
           <h1 className="my-10 text-5xl font-bold">Sign up</h1>
