@@ -5,7 +5,7 @@ import logo from '../public/images/logo.png'
 export default function () {
   return (
     <>
-      <div className="container absolute flex items-center justify-center">
+      <div className="flex items-center justify-center">
         <div className="text-center">
           <h1 className="my-10 text-5xl font-bold">Log in</h1>
           <div className="mb-6 rounded-md border border-solid bg-white px-20 py-1 hover:bg-gray-500">
@@ -14,13 +14,13 @@ export default function () {
           <hr className="my-6 border-gray-500 opacity-60" />
           <div>
             <input
-              type="text"
+              type="email"
               className="mb-3 w-80 p-1 "
               placeholder="Enter your email address..."
             />
             <br />
             <input
-              type="text"
+              type="password"
               className="mb-3 w-80 p-1"
               placeholder="Enter your password..."
             />
@@ -34,6 +34,9 @@ export default function () {
             <a href="" className="text-sm">
               <p>Forgot Password?</p>
             </a>
+            <p>
+              Don't have an account? <a href="">Sign up</a>
+            </p>
           </div>
         </div>
       </div>
